@@ -1,2 +1,0 @@
-alert("aaaaaaa")
-alert("bbbb")

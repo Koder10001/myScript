@@ -4,7 +4,7 @@ function countConstellation(i)
     {
         let countLock = document.querySelectorAll(".lock").length;
         let unlocked = 6 - countLock;
-        console.log(`${document.querySelector(".name").innerText} : Constellation ${unlocked}`);
+        console.log(`${document.querySelector(".name").innerText} : Constellation ${unlocked} Favorite level: ${document.querySelector(".fav").innerText}`);
         document.querySelectorAll(".right")[1].click()
         setTimeout(()=>{ countConstellation(++i) },500);
     }

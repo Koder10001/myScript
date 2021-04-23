@@ -17,7 +17,7 @@ function countConstellation(i, str = "")
     }
 }
 
-if(window.location.hostname != "webstatic-sea.mihoyo.com"){
+if(window.location.hostname != "webstatic-sea.mihoyo.com" || window.location.hostname != "webstatic-sea.hoyolab.com"){
     window.location.href = document.querySelector("iframe").src;
 }
 else {

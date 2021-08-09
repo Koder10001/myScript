@@ -1,4 +1,5 @@
 function downloadAll(i,links){
+    console.log(links);
     if(i < imgs.length){
         let xml = new XMLHttpRequest();
         xml.open("GET",links[i]);

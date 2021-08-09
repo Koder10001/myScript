@@ -3,6 +3,7 @@ function downloadAll(i,links){
     if(i < imgs.length){
         let xml = new XMLHttpRequest();
         xml.open("GET",links[i]);
+        xml.setRequestHeader('X-CSRFToken', csrftoken);
         xml.responseType = "blob";
         xml.onload = function (e) {
             var blob = e.currentTarget.response;

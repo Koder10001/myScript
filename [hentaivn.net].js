@@ -28,8 +28,8 @@ function saveBlob(blob,fileName){
 
 }
 
-let imgs = document.querySelectorAll("#image > img")
-let arr = [];
+imgs = document.querySelectorAll("#image > img")
+arr = [];
 for(let node of imgs){
     arr.push(node.src)
 }

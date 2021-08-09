@@ -11,6 +11,7 @@ function downloadAll(i,links){
             var fileName = contentDispo.match(/filename[^;=\n]*=((['"]).*?\2|[^;\n]*)/)[1];
             saveBlob(blob, fileName);
         }
+        xml.send();
         setTimeout(()=>{downloadAll(i+1,links)},500);
     }
 }

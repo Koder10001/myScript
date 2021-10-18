@@ -1,0 +1,1 @@
+document.querySelector("#myElement > div.jw-custom-skip").click()

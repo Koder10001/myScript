@@ -1,0 +1,12 @@
+let as = document.querySelectorAll(".gallery > a")
+function download(arr, index){
+    if(index < arr.length){
+        let downloadLink = document.createElement("a")
+        downloadLink.href= arr[index].href+"download";
+        downloadLink.setAttribute("download","")
+        document.body.appendChild(downloadLink);
+        downloadLink.click();
+        setTimeout(download, 500, arr, ++index);
+    }
+}
+download(as,0)
